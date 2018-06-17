@@ -1,4 +1,4 @@
-(defproject cljs-webpack "0.1.0-SNAPSHOT"
+(defproject cljs-plus "0.1.0-SNAPSHOT"
   :description "FIXME: write this!"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
@@ -17,19 +17,19 @@
   :cljsbuild {:builds
               [{:id "dev"
                 :source-paths ["src"]
-                ;; :figwheel {:on-jsload "cljs-webpack.core/on-js-reload"
+                ;; :figwheel {:on-jsload "cljs-plus.core/on-js-reload"
                 ;;            :open-urls ["http://localhost:3449/index.html"]}
 
-                :compiler {:main cljs-webpack.core
+                :compiler {:main cljs-plus.core
                            :asset-path "js/compiled/out"
-                           :output-to "resources/public/js/compiled/cljs_webpack.js"
+                           :output-to "resources/public/js/compiled/cljs_plus.js"
                            :output-dir "resources/public/js/compiled/out"
                            :source-map-timestamp true
                            :preloads [devtools.preload]}}
                {:id "min"
                 :source-paths ["src"]
-                :compiler {:output-to "../src/cljs_webpack.js"
-                           :main cljs-webpack.core
+                :compiler {:output-to "../src/cljs_plus.js"
+                           :main cljs-plus.core
                            :optimizations :advanced
                            :pretty-print false}}]}
 

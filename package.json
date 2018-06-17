@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-cljs": "cd cljs-webpack && lein do clean, cljsbuild once min",
+    "build-cljs": "cd cljs-plus && lein do clean, cljsbuild once min",
     "build": "webpack"
   },
   "keywords": [],
